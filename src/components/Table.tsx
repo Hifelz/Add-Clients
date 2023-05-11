@@ -5,13 +5,16 @@ interface TabelaProps {
 }
 
 export default function Tabela (props: TabelaProps) {
+    function renderHeader() {
+        <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    }
     return (
         <table>
-            <tr>
-                <th>Code</th>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
+            {renderHeader()}
         </table>
     )
 }
